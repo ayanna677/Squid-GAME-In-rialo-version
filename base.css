@@ -155,3 +155,31 @@ body, html {
              -webkit-transform: scaleY(1.0);
          }
 }
+
+/* Rialo Logo at top-left */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 10px;  /* adjust if needed */
+    left: 10px; /* adjust if needed */
+    z-index: 1100; /* above timer and other elements */
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.logo-container span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
