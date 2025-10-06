@@ -37,28 +37,32 @@
     <link rel="apple-touch-startup-image" href="icons/apple-splash-1136-640.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
   </head>
   <body>
-    <script src="src/main.js" type="module">
-    </script>
-    <section id="loading-screen">
-      <div class="spinner">
-        <div class="rect1"></div>
-        <div class="rect2"></div>
-        <div class="rect3"></div>
-        <div class="rect4"></div>
-        <div class="rect5"></div>
-        <!-- Rialo Logo + Text (add this just above <section id="intro"> ) -->
-<div class="logo-container">
-  <img src="./static/resources/rialo-logo.jpg" alt="Rialo Logo">
-  <span>Rialo</span>
-</div>
-    </section>
-    <section id="intro">
-      <img src="./static/resources/logo.png">
-      <button id="start">Click to Play</button>
-    </section>
-    <div class="timer">
-      <img alt="" src="./static/resources/timer.jpg">
-      <span id="countdowntimer" class="countdowntimer"></span>
+  <!-- Rialo Logo + Text -->
+  <div class="logo-container">
+    <img src="./static/resources/rialo-logo.jpg" alt="Rialo Logo">
+    <span>Rialo</span>
+  </div>
+
+  <script src="src/main.js" type="module"></script>
+
+  <section id="loading-screen">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
     </div>
-  </body>
+  </section>
+
+  <section id="intro">
+    <img src="./static/resources/logo.png">
+    <button id="start">Click to Play</button>
+  </section>
+
+  <div class="timer">
+    <img alt="" src="./static/resources/timer.jpg">
+    <span id="countdowntimer" class="countdowntimer"></span>
+  </div>
+</body>
 </html>
